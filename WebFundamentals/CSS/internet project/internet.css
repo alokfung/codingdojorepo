@@ -1,0 +1,255 @@
+/*
+    Tripoli is a generic CSS standard for HTML rendering. 
+    Copyright (C) 2007  David Hellsing
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+* {
+	text-decoration: none;
+	font-size: 1em;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	}
+code, kbd, samp, pre, tt, var, textarea, 
+input, select, isindex, listing, xmp, plaintext {
+	white-space: normal;
+	font-size: 1em;
+	font: inherit;
+	}
+dfn, i, cite, var, address, em { 
+	font-style: normal; 
+	}
+th, b, strong, h1, h2, h3, h4, h5, h6 { 
+	font-weight: normal; 
+	}
+a, img, a img, iframe, form, fieldset, 
+abbr, acronym, object, applet, table {
+	border: none; 
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+caption, th, td, center { 
+	vertical-align: top;
+	text-align: left;
+	}
+body { 
+	background: white; 
+	line-height: 1; 
+	color: black; 
+	}
+q { 
+	quotes: "" ""; 
+	}
+sub, sup { 
+	vertical-align: baseline; 
+	}
+a { 
+	color: inherit; 
+	}
+font { 
+	color: inherit !important; 
+	font: inherit !important; 
+	color: inherit !important; /* editor's note: necessary? */ 
+	}
+marquee {
+	overflow: inherit !important;
+	-moz-binding: none;
+	}
+blink { 
+	text-decoration: none; 
+	}
+nobr { 
+	white-space: normal; 
+	}
+
+/* End of CSS Reset */
+/* Removed <ol> <ul> <hr> reset because assignment required its use */
+
+/* ELEMENT STYLING */
+body{
+	width:970px;
+}
+
+h1{
+	color: #474747;
+	display: inline-block;
+	font-size: 45pt;
+}
+h2{
+	background: linear-gradient(#23649e,#5283ac,#23649e);
+	color: white;
+	font-size: 24pt;
+	padding: 10px;
+}
+h3{
+	color: #22649e;
+	font-size: 20pt;
+	font-weight: bold;
+}
+h4{
+	font-size: 16pt;
+}
+hr{
+	margin: 5px;
+}
+li {
+	list-style-position: inside;
+}
+ol, ul{
+	margin: 10px;
+}
+p{
+	margin: 10px;
+}
+
+/* CLASSES */
+	/* BUTTON CLASSES */
+	.button{
+		border-radius: 5px;
+		box-shadow: 2px 2px 8px black;
+		font-size: 14pt;
+		color: white;
+		padding: 10px;
+		margin:5px;
+		display: inline-block;
+		width: 70%;
+		text-align: center;
+	}
+	.btnbluegrad{
+		background: linear-gradient(#6298c3,#23649e);
+		margin: 5px 20px;
+	}
+	.btnyelgrad{
+		background: linear-gradient(#ebae56,#ef7300);
+		margin: 5px 20px;
+	}
+	.btnltbgrad{
+		background: linear-gradient(#77d0df,#00c0df);		
+	}
+
+	/* SPAN CLASSES */
+	.red{
+		color: #da2721;
+	}
+	.blue{
+		color: #22649e;
+	}
+	.ltblue{
+		color: #00c0df;
+		text-decoration: none;
+	}
+	.grey{
+		color: grey;
+	}
+	.bold{
+		font-weight: bold;
+	}
+	.large{
+		font-size: 22pt;
+	}
+
+/* IMAGE STYLING */
+.mainicon{
+	width:100px;
+	display: inline-block;
+	position: relative;
+	top: 25px;
+}
+.sideicon{
+	width: 80%;
+}
+.home{
+    width: 20px;
+    margin: 4px;
+    vertical-align: middle;
+}
+.sub{
+	width: 100px;
+	display: inline-block;
+}
+.main{
+	width: 400px;
+	margin: 0px 130px;
+}
+.phone{
+	width: 45px;
+	vertical-align: middle;
+}
+
+/* ID FOR LARGE DIVISIONS */
+#main{
+	background: linear-gradient(#e3e3e3,white);
+	height: 180px;
+	width: 100%;
+}
+#sidebar{
+    display: inline-block;
+    height: 200px;
+    width: 25%;
+    vertical-align: top;
+    font-size: 12pt;
+    padding: 10px;
+}
+#primary{
+    display: inline-block;
+    height: 620px;
+    width: 70%;
+    vertical-align: top;
+    font-size: 10pt;
+}
+#sidead{
+	width: 80%;
+	text-align: center;
+	margin: 20px;
+	background-image: url("ad_background.png");
+	font-size: 18pt;
+	color: white;
+	padding: 5px;
+}
+#navbanner{
+	display: inline-block;
+    vertical-align: top;
+    width: 455px;
+    height: 25px;
+}
+#bluebox{
+	display: inline-block;
+	border: 5px solid #0085e0;
+	padding: 5px;
+	margin: 10px;
+}
+#secondary{
+	width: 80%;
+	display: inline-block;
+	vertical-align: top;
+}
+#rightnav{
+	display: inline-block;
+    font-size: 10pt;
+    color: #22649e;
+    width: 200px;
+    margin: 5px;
+}
+#contact{
+	display: inline-block;
+	font-size: 8pt;
+	color: grey;
+	width: 100px;
+	vertical-align: middle;
+	white-space: nowrap
+}
