@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="contactcard.js"></script>
+    <link rel="stylesheet" href="contactcard.css">
+    <title>Contact Card</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Adrian's Contact Card</h1>
+        <p>Input your contact below, view your contacts to the right.</p>
+        <div id="input">
+            <form action="action.php" >
+                <ul>
+                    <li>
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name">
+                    </li>
+                    <li>
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name">
+                    </li>
+                    <li>
+                        <label for="description">Description:</label>     
+                        <textarea name="description" id="description"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" id="submit" value="Add Contact">
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+        <div id="output">
+            <h1>My Saved Contacts</h1>
+        </div>
+    </div>
+</body>
+</html>
