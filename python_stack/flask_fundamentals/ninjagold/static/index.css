@@ -1,0 +1,48 @@
+*{
+    background-color: lightgrey;
+    color: black;
+    font-size: 14pt;
+    background-color: inherit;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 18pt;
+}
+
+h2{
+    font-size: 14pt;
+}
+p{
+    font-size: 10pt;
+    font-style: italic;
+}
+
+#container{
+    width: 90%;
+    margin: 30px auto; /*center*/
+}
+
+.actions{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    vertical-align: top;
+    text-align: center;
+}
+
+input{
+    padding: 20px;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: lightseagreen;
+}
+form{
+    margin: 30px 0px;
+}
+
+textarea{
+    background-color: white;
+    font-size: 12pt;
+}

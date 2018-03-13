@@ -1,0 +1,25 @@
+<<Create the directory and initiate Git on it.>>
+
+mkdir basic_repo
+cd basic_repo
+git init
+
+<<Create a couple files and commit changes on them.>>
+
+copy NUL readme.txt
+copy NUL test.txt
+git status
+git add readme.txt
+git add test.txt
+git commit -m "first commit"
+
+<<Connect to Github and push changes online.>>
+
+git remote add origin https://github.com/alokfung/basic_repo.git
+git push -u origin master
+
+<<More changes made, commit and push to Github>>
+
+git add readme.txt
+git add test.txt
+git commit -m "added new line to readme. added cervelo to test"

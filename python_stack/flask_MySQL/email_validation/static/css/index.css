@@ -1,0 +1,29 @@
+#container{
+    width: 90%;
+    margin: 10px auto;
+    padding:20px;
+}
+
+.flash{
+    display: inline-block;
+    width: 380px;
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.green{
+    background-color: green;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+table, td{
+    border:1px solid black;
+}

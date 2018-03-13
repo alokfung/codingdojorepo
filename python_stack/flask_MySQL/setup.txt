@@ -1,0 +1,12 @@
+USE twitter;
+SELECT * FROM users;
+
+INSERT INTO users (first_name, last_name, handle, birthday, created_at, updated_at) VALUES ('Adrian','Fung','alokfung','1989-02-12',NOW(),NOW());
+
+SELECT first_name, last_name
+FROM users
+WHERE birthday BETWEEN '1978-01-01' AND '1980-01-01';
+
+SELECT first_name, last_name
+FROM users
+WHERE birthday BETWEEN '1978-01-01' AND '1980-01-01';

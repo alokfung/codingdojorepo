@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>My Registration Form</title>
+    </head>
+    <body>
+        <h1>My Registration Form</h1>
+        <form action="process.php" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <label for="first_name">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="first_name" name="first_name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="last_name">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="last_name" name="last_name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pwconfirm">PW Confirm:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pwconfirm" name="pwconfirm">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="birthday">Birthday:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="birthday" name="birthday">
+                        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/404-200.png" alt="calendar" height="15" width="15">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+
+                        <label for="other">Other</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <p>A short description about yourself:</p>
+                        <textarea name="description"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Favorite Language:</p>
+                    </td>
+                    <td>
+                        <select name="language">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>

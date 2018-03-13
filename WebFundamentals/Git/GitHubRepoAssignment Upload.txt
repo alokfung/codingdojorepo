@@ -1,0 +1,7 @@
+cd GitHubRepoAssignment
+copy NUL readme.md
+git add readme.md
+git commit -m "first commit"
+git status
+git remote add origin https://github.com/alokfung/GitHubRepoAssignment.git
+git push -u origin master

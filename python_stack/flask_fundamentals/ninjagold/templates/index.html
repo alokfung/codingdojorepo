@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+    <title>Ninja Gold</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Ninja Gold</h1>
+        <h2>Your Bank: {{gold}}g</h2>
+        <div class="actions">
+            <h2>Farm</h2>
+            <p>(earns 10-20 gold)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="farm" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+        <div class="actions">
+            <h2>Cave</h2>
+            <p>(earns 5-10 gold)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="cave" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+        <div class="actions">
+            <h2>House</h2>
+            <p>(earns 2-5 gold)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="house" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+        <div class="actions">
+            <h2>Casino</h2>
+            <p>(earns/takes 0-50 gold)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="casino" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+        <h2>Activity Log:</h2>
+        <textarea name="textar" id="textar" cols=100% rows="5">
+            {{act}}
+        </textarea>
+    </div>
+</body>
+</html>

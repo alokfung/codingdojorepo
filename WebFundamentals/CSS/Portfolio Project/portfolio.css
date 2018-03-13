@@ -1,0 +1,151 @@
+h1{
+    font-size: 24pt;
+    color:black;
+    display: inline-block;
+    vertical-align: middle;
+}
+#header h2{
+    font-size: 16pt;
+    color:black;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: 400px;
+}
+img.profile{
+    overflow: hidden;
+    width: 100%;   
+}
+img.icons{
+    overflow: hidden;
+    width: 18%; 
+}
+img.footericons{
+    overflow: hidden;
+    width: 20px; 
+}
+p{
+    margin: 0px 0px 10px;
+}
+a{
+    color: black;
+}
+.button{
+    background-color: #407d61;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 8px #888888;
+    font-size: 10pt;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#header{
+    background: linear-gradient(#f1f1f1 , #fefefe);
+    height: 85px;
+    width: 900px;
+}
+
+#main{
+    background-color: #6f5964;
+    width: 900px;
+    display: inline-block;
+}
+
+#rowcontainer1{
+    background-color: #6f5964;
+    width: 900px;
+    display: inline-block;
+}
+#rowcontainer2{
+    background-color: #6f5964;
+    display: inline-block;
+    padding: 20px;
+    width: 860px;
+    height: 600px;
+}
+
+#profilepic{
+    background-color: #c0c0c0;
+    height: 255px;
+    width: 388px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 5px;
+    margin: 20px;
+}
+
+#intro{
+    height: 265px;
+    width: 418px;
+    margin: 20px;
+    vertical-align: top;
+    display: inline-block;
+    overflow: hidden;
+}
+.subheader1, .subheader2{
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(#b0b0b4 ,#888693,#b0b0b4);
+    display: inline-block;
+    width: 96%;
+    padding: 2%;
+}
+.subheader1{
+    font-size: 16pt;
+}
+.subheader2{
+    font-size: 12pt;
+}
+
+#introtext{
+    background: linear-gradient(to right,#ffffff,#dacbd9);
+    display: inline-block;
+    padding: 10px;
+    font-size: 12pt;
+}
+.contentbody1, .contentbody2{
+    background: linear-gradient(to right,#ffffff,#dacbd9);
+    display: inline-block;
+    padding: 10px;
+    font-size: 12pt;
+}
+.contentbody2{
+    height: 185px;
+}
+.buttondiv{
+    background: linear-gradient(to right,#ffffff,#dacbd9);
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.content{
+    background: linear-gradient(to right,#ffffff,#dacbd9);
+    width: 280px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2px;
+}
+
+#footer{
+    background: linear-gradient(#fefefe,#f1f1f1);
+    height: 54px;
+    width: 880px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    vertical-align: text-top;
+}
+#footer a{
+    vertical-align: middle;
+    display: inline-block;    
+}
+#footer img{
+    vertical-align: middle;
+    display: inline-block;    
+}
